@@ -1,0 +1,100 @@
+/* General body styling */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+/* Stopwatch container styling */
+.stopwatch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid #fff;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #f5f5f5, #ffffff);
+    padding: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+}
+
+/* Display section for time */
+.display {
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: #111;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+
+/* Button container styling */
+.controls button {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin: 8px;
+    min-width: 130px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+}
+
+/* Start button styles */
+.start-button {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.start-button:hover {
+    background-color: #218838;
+    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.5);
+    transform: scale(1.05);
+}
+
+/* Stop button styles */
+.stop-button {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.stop-button:hover {
+    background-color: #c82333;
+    box-shadow: 0 4px 15px rgba(220, 53, 69, 0.5);
+    transform: scale(1.05);
+}
+
+/* Reset button styles */
+.reset-button {
+    background-color: #17a2b8;
+    color: #fff;
+}
+
+.reset-button:hover {
+    background-color: #138496;
+    box-shadow: 0 4px 15px rgba(23, 162, 184, 0.5);
+    transform: scale(1.05);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .display {
+        font-size: 3rem;
+    }
+
+    .controls button {
+        font-size: 1.2rem;
+        padding: 8px 12px;
+        min-width: 100px;
+    }
+}
